@@ -1,0 +1,20 @@
+<template>
+
+    <template if:false={selectedBike}>
+        <template for:each={bikes} for:item="bike">
+            <c-bike-card_v1
+                key={bike.id}
+                bike={bike}
+                onviewdetails={handleViewDetails}>
+            </c-bike-card_v1>
+        </template>
+    </template>
+
+    <template if:true={selectedBike}>
+        <c-bike-detail_v1
+            bike={selectedBike}
+            onback={handleBack}>
+        </c-bike-detail_v1>
+    </template>
+
+</template>

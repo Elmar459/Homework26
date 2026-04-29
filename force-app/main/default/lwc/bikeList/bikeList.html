@@ -1,0 +1,8 @@
+<template>
+    <template for:each={bikes} for:item="bike">
+        <c-bike-card 
+            key={bike.id} 
+            bike={bike}>
+        </c-bike-card>
+    </template>
+</template>

@@ -1,0 +1,9 @@
+<template>
+    <button onclick={handleToggle}>
+        Show / Hide
+    </button>
+
+    <template if:true={isVisible}>
+        <c-lifecycle-demo-inner_v1></c-lifecycle-demo-inner_v1>
+    </template>
+</template>

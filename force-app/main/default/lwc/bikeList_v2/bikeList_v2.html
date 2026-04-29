@@ -1,0 +1,13 @@
+<template>
+    <template for:each={bikes} for:item="bike">
+        <c-bike-card_v2
+            key={bike.id}
+            bike={bike}
+            onbikeselect={handleBikeSelect}>
+        </c-bike-card_v2>
+    </template>
+
+    <p if:true={selectedBikeName}>
+        You selected: {selectedBikeName}
+    </p>
+</template>

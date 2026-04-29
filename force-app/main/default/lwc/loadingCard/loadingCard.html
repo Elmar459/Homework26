@@ -1,0 +1,17 @@
+<template>
+
+    <template if:false={ready}>
+        <p>Please wait, loading product...</p>
+    </template>
+
+    <template if:true={ready}>
+        <div class="card">
+            <h2>{productName}</h2>
+            <p>{description}</p>
+            <p class="price">${price}</p>
+            <p>{category}</p>
+            <img src={imageUrl} />
+        </div>
+    </template>
+
+</template>

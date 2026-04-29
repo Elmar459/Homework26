@@ -1,0 +1,14 @@
+<template>
+    <div class="detail">
+        <h2>{bike.name}</h2>
+        <p>{bike.category}</p>
+        <p>{bike.description}</p>
+        <p>${bike.price}</p>
+
+        <img src={bike.pictureUrl} />
+
+        <button onclick={handleBack}>
+            Back
+        </button>
+    </div>
+</template>
